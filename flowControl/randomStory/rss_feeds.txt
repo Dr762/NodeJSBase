@@ -1,2 +1,0 @@
-http://dave.smallpict.com/rss.xml
-http://feeds.reuters.com/reuters/scienceNews
