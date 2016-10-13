@@ -38,7 +38,7 @@ a {
   border-bottom: 1px solid #eee;
 }
 
-#room-list dib:hover {
+#room-list div:hover {
   background-color: #ddd;
 }
 
