@@ -31,7 +31,7 @@ Chat.prototype.processCommand = function(command){
     break;
    
    case 'nick':
-    wordss.shift();
+    words.shift();
     var name = words.join(' ');
     this.socket.emit('nameAttempt', name);
     break;

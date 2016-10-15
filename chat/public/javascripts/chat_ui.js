@@ -6,9 +6,8 @@ function divSystemContentElement(message){
   return $('<div></div>').html('<i>'+message+'</i>'); 
 }
 
-function processUserInput(chatApp, socket){
-  
-  var message = $('#send-message').val();
+function processUserInput(chatApp, socket){  
+  var message = $('#send-message').val()
   var sysMessage;
   
   if (message.charAt(0)=='/'){
@@ -25,8 +24,8 @@ function processUserInput(chatApp, socket){
 }
 
 var socket = io.connect();
-
 $(document).ready(function(){
+  
   var chatApp = new Chat(socket);
   socket.on('nameResult', function(result){
     var message;
@@ -48,7 +47,7 @@ $(document).ready(function(){
    $('#messages').append(newElement); 
  });
 
- socket.on('rooms',functions(rooms){
+ socket.on('rooms',function(rooms){
    $('#room-list').empty();
    for(var room in rooms){
      room = room.substring(1, room.length);

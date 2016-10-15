@@ -12,7 +12,7 @@
     "url": "https://github.com/abondar24/NodeJSBase/issues"
   },
   "dependencies":{
-   "socket.io":"latest",
-  "mime":"latest" 
+   "socket.io":"~0.9.6",
+   "mime":"latest" 
   }
 }

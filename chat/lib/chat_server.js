@@ -8,12 +8,12 @@ var currentRoom = {};
 
 exports.listen = function(server){
 io = socketio.listen(server);
-
+io.set('log level',3)
 io.sockets.on('connection', function(socket){
  guestNumber = assignGuestName(socket, guestNumber, nickNames, namesUsed);
  joinRoom(socket, 'Lobby');
 
- handleMsgBroadCasting(socke);
+ handleMsgBroadCasting(socket,nickNames);
  handleNameChangeAttempts(socket, nickNames, namesUsed);
  handleRoomJoining(socket);
 
@@ -69,9 +69,9 @@ function handleNameChangeAttempts(socket, nickNames, namesUsed){
         message: 'Names cannot begin with "Guest".' 
        });
      } else {
-        if (nameUsed.index(name)==-1){
+        if (namesUsed.indexOf(name)==-1){
          var previousName = nickNames[socket.id]
-         var previousNameIndex = namesUsed.indexof(previousName);
+         var previousNameIndex = namesUsed.indexOf(previousName);
          namesUsed.push(name);
          nickNames[socket.id] = name;
          delete namesUsed[previousNameIndex];
@@ -79,11 +79,16 @@ function handleNameChangeAttempts(socket, nickNames, namesUsed){
            success: true,
            name: name 
          });    
-         socket.broadcast.to(current[socket.id]).emit('message',{
+         socket.broadcast.to(currentRoom[socket.id]).emit('message',{
            text: previousName + ' is now known as ' + name + '.'
          }); 
-       }    
+       } else {
+        socket.emit('nameResult',{
+          success: false,
+          messagge: "This name is already in use" 
+      });
      }
+    }   
    });
 }
 
