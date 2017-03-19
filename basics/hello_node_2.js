@@ -17,8 +17,8 @@ http.createServer(function (req, res) {
                 res.end("No Dragon for now.");
             } else {
                 var img = fs.readFileSync(file);
-                res.contentType = "image/img"
-                res.contentLength = stat.size
+                res.contentType = "image/img";
+                res.contentLength = stat.size;
                 res.end(img,"binary");
             }
         });
