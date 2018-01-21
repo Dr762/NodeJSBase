@@ -1,8 +1,7 @@
 /**
  * Created by abondar on 10.01.16.
  */
-
-//parrallel flow controll
+ 
 var fs = require('fs')
 var completedTasks = 0
 var tasks = []

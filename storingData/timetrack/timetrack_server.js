@@ -3,9 +3,6 @@
  */
 
 
-//timetracker tool(small jira ;)) )
-
-
 var http = require('http')
 var work = require('./timetrack')
 var mysql = require('mysql')

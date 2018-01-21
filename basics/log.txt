@@ -1,0 +1,3 @@
+read .gitignore
+read LICENSE
+read README.md

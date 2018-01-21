@@ -1,5 +1,3 @@
-// create cert, private and public key before you run this demo
-
 var fs = require('fs');
 var https = require('https');
 
@@ -16,5 +14,3 @@ https.createServer(options, function (req, res) {
     res.end("Hello Secure World\n");
 
 }).listen(443);
-
-

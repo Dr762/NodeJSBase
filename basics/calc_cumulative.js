@@ -1,5 +1,3 @@
-//calculate cumulative TTL of request.
-
 let requests = [
 {requestId: 'poiax',  startedAt: 1489744808, ttl: 8},
 {requestId: 'kdfhd',  startedAt: 1489744803, ttl: 3},

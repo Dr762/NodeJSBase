@@ -1,8 +1,6 @@
 /**
  * Created by abondar on 10.01.16.
  */
-//flow controll app(reading a random rss feed)
-
 var fs = require('fs')
 var request = require('request')
 var htmlParser = require('htmlparser')

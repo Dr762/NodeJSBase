@@ -2,7 +2,7 @@
  * Created by abondar on 10.01.16.
  */
 
-//file server which returns any file from root dir
+
 var http = require('http')
 var parse = require('url').parse
 var join = require('path').join
