@@ -13,3 +13,4 @@ Basic staff for NodeJS
 - [SocketIO](socketio/README.md)
 - [Storing Data](storingData/README.md)
 - [Word Count](word_count/README.md)
+- [Photo](photo/README.md)
