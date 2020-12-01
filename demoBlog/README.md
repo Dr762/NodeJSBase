@@ -2,6 +2,8 @@
 
 Small server returning a page with a data from JSON
 
-```yaml
-localhost:8000
-```
+
+### Run and access
+- Run ```yaml node blog.js ```
+
+- Access: localhost:8000

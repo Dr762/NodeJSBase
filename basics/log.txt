@@ -1,3 +1,6 @@
 read .gitignore
 read LICENSE
 read README.md
+read .gitignore
+read LICENSE
+read README.md

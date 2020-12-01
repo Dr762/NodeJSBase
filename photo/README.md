@@ -4,13 +4,15 @@ Small photo upload/download tool based on express.js
 
 Requires MongoDB with database named 'photo_base'
 
-Install and run
+### Install and run
+
+- Install
 ```yaml
  npm install
  npm bin/www
 ```
 
-Access
+- Access
 ```yaml
   localhost:5000
 
