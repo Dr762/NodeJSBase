@@ -43,11 +43,9 @@ node analyze_polygons.js
 
 
 10) get_console - Create and run a script in console.
-
 Run ```node get_console.js```
 
 11) get_permissions - Get permissions of get_console.js
-
 Run
 
 ```
@@ -56,13 +54,10 @@ node get_permissions.js
 ```
 
 12) read_by_grep - Run ls and grep commands
-
 Run ```node read_by_grep.js```
 
 13) read_dirs - Read directory
-
 Run ```node read_dirs.js```
 
 14) read_file - Read a file
-
 Run ```node read_file.js```
